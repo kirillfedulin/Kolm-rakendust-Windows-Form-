@@ -7,18 +7,18 @@ namespace ThreeAppsWinForms.MathGameApp;
 public class MathGameForm : Form
 {
     private MathQuestion _question;
-    private int _score;
-    private int _attempts;
-    private int _timeLeft;
-    private readonly System.Windows.Forms.Timer _timer;
+    int _score;
+    int _attempts;
+    int _timeLeft;
+    readonly System.Windows.Forms.Timer _timer;
 
-    private readonly Label _questionLabel;
-    private readonly TextBox _answerTextBox;
-    private readonly Button _btnSubmit;
-    private readonly Label _feedbackLabel;
-    private readonly Label _scoreLabel;
-    private readonly Label _timerLabel;
-    private readonly ComboBox _difficultyCombo;
+    Label _questionLabel;
+    TextBox _answerTextBox;
+    Button _btnSubmit;
+    Label _feedbackLabel;
+    Label _scoreLabel;
+    Label _timerLabel;
+    ComboBox _difficultyCombo;
 
     public MathGameForm()
     {
