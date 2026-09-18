@@ -15,7 +15,7 @@ public class MathGameForm : Form
     Label _questionLabel;
     TextBox _answerTextBox;
     Button _btnSubmit;
-    Label _feedbackLabel;
+    Label _feedbackLabel;   
     Label _scoreLabel;
     Label _timerLabel;
     ComboBox _difficultyCombo;
@@ -28,7 +28,7 @@ public class MathGameForm : Form
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
 
-        var difficultyLabel = new Label { Text = "Keerukus:", Left = 20, Top = 20, Width = 80 };
+        var difficultyLabel = new Label { Text = "Keerukus:", Left = 20, Top = 20, Width = 80 };    
         _difficultyCombo = new ComboBox
         {
             Left = 100,

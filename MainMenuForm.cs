@@ -1,8 +1,8 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using ThreeAppsWinForms.ImageViewerApp;
 using ThreeAppsWinForms.MathGameApp;
-using ThreeAppsWinForms.MemoryGameApp;
 
 namespace ThreeAppsWinForms;
 
@@ -32,14 +32,18 @@ public class MainMenuForm : Form
             Height = 60
         };
 
-        //_btnImageViewer = CreateMenuButton("Pildivaatur", 100);
+        _btnImageViewer = CreateMenuButton("Pildivaatur", 100);
         _btnMathGame = CreateMenuButton("Matemaatiline äraarvamismäng", 150);
         //_btnMemoryGame = CreateMenuButton("Sarnane pildiotsija mäng", 200);
         _btnMathGame.Click += (s, e) => OpenChildForm(new MathGameForm());
 
+        _btnImageViewer.Click += (s, e) => OpenChildForm(new ImageViewerForm());
+        _btnMathGame.Click += (s, e) => OpenChildForm(new MathGameForm());
+        //_btnMemoryGame.Click += (s, e) => OpenChildForm(new MemoryGameForm());
+
         //Controls.Add(_btnMemoryGame);
         Controls.Add(_btnMathGame);
-        //Controls.Add(_btnImageViewer);
+        Controls.Add(_btnImageViewer);
         Controls.Add(_titleLabel);
     }
 
